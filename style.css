@@ -1,0 +1,81 @@
+.b {
+    background-image: url("File/background.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative; /* Changed from absolute to relative */
+    background-repeat: repeat-x;
+}
+
+.body {
+    margin: 0px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.f {
+    position: absolute;
+    height: 150px;
+    bottom: 15vh; /* Use vh units instead of fixed pixel value */
+}
+
+.boy {
+    position: absolute;
+    height: 250px;
+    bottom: 17vh; /* Use vh units instead of fixed pixel value */
+    left: 10%; /* Position the boy horizontally */
+}
+
+.score {
+    position: absolute;
+    font-size: 80px;
+    font-family: "Arial";
+    font-weight: bold;
+    top: 10px;
+    left: 50px;
+}
+
+.end{
+    width: 100%;
+	top:0;
+    height: 100vh;
+    position: absolute;
+    background-color: green;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "arial";
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    visibility: hidden;
+}
+.btn{
+    width: 500px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255,30,0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-height: 600px) {
+    .f { bottom: 14vh; }
+    .boy { bottom: 15vh; }
+}
+
+@media screen and (min-height: 900px) {
+    .f { bottom: 16vh; }
+    .boy { bottom: 17vh; }
+}
